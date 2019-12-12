@@ -1,0 +1,263 @@
+
+
+#app {
+  display: block;
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html {background-color: #4f4f4f;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------NAVIGATION---------------*/
+
+.nav {
+  display: block;
+  position: fixed;
+  height: 15vh;
+  margin: 0 auto;
+  background-color: #FFF;
+  width: 100vw;
+  color: #fff;
+  z-index: 1000;
+}
+
+.nav img {
+  height: auto;
+  width: 20vw;
+  min-width: 300px;
+  margin: 2vh ;
+}
+
+.nav p {
+  display: inline-block;
+  padding: 0 2em;
+  position: relative;
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 1.5em;
+  top: -7vh;
+  color: rgba(31, 113, 151, 1);
+  transition: all 0.3s ease;
+}
+
+.nav p:hover {
+  color: rgb(103, 200, 178);
+}
+
+/*----------------------BODY------------------------*/
+
+/*-------HERO IMAGE SECTION---------------*/
+.body {
+  z-index: 0;
+}
+
+.heroImage {
+  display: block;
+  background: url('../../../build/images/eveningSkyline.jpg'), rgba(31, 113, 151, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  height: 75vh;
+  padding: 20vh 0 0 0;
+}
+
+.heroLogo {
+  width: 40vw;
+  min-width: 500px;
+  height: auto;
+}
+
+.heroText {
+  display: block;
+  position: relative;
+  margin: 3em auto;
+  padding: 1em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heroGive {
+  background: linear-gradient(45deg, rgba(31, 113, 151, 1), rgb(103, 200, 178));
+  position: relative;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  border-radius: 10000px;
+  margin: 0 auto;
+  padding: 1em;
+  border: 3px solid #fff;
+  mix-blend-mode: screen;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.heroGive:hover {
+  background: linear-gradient(45deg, #fff, #FFF);
+  box-shadow: 2px 5px 0px #1F7197;
+  color: #1F7197;
+}
+
+.sectionTop {
+  width: 100vw;
+  height: 10vh;
+  background-image: url('../../../build/images/sectionTop.png');
+  background-size: 55%;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: absolute;
+  top: 88.55vh;
+}
+
+/*---------------ABOUT SECTION---------------*/
+
+.about {
+  padding: 3em 0;
+  background-color: #fff;
+}
+
+.staff {
+  padding: 2em;
+}
+
+.card {
+    display: inline-block;
+    margin: 0 2.5em;
+    padding: 1em;
+    width: 40%;
+    min-width: 400px;
+}
+.profile {
+  display: inline-block;
+  position: relative;
+  padding: 1em;
+  height: 30%;
+}
+
+.profile h3 {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.avatar {
+  display: block;
+  width: 35%;
+  float: left;
+  border-radius: 10000px;
+  height: auto;
+}
+
+.nameImage {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  display: inline-block;
+  float: right;
+  width: 60%;
+  padding-top: 8%;
+  position: relative;
+}
+
+.bio p {
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100px;
+}
+/*---------------ENGAGE SECTION---------------*/
+
+.sectionBottom {
+  width: 100vw;
+  height: 10vh;
+  background-image: url('../../../build/images/sectionBottom.png');
+  background-size: 75%;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
+  top: -2.8vh;
+}
+
+.engage {
+  min-height: 80vh;
+  background: url("../../../build/images/sunriseSeattle.jpg"), rgba(31, 113, 151, 0.8) ;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.engageButton {
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  color: #1F7197;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  border-radius: 10000px;
+  margin: .5em 1em;
+  padding: 1em 5vw;
+  top: 2em;
+  border: 3px solid #fff;
+  box-shadow: 2px 5px 0px rgba(31, 113, 151, 1);
+  mix-blend-mode: screen;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.engageButton:hover {
+  background: #fff;
+  box-shadow: 2px 5px 0px rgb(103, 200, 178);
+  color: #000;
+}
+
+/*---------------------------FOOTER-------------------------*/
+.footer {
+  display: block;
+  position: relative;
+  background-color: #4f4f4f;
+  color: #fff;
+  z-index: 100;
+  padding: 2em;
+  margin: 0 auto;
+}
