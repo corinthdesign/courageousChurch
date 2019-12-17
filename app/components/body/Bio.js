@@ -4,7 +4,7 @@ class Bio extends React.Component {
   render() {
     return (
       <div>
-        <p>{this.props.content}</p>
+        <p>{this.props.bio}</p>
       </div>
     );
   };

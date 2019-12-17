@@ -12,7 +12,7 @@ class Profile extends React.Component {
             <h3>{this.props.title}</h3>
           </div>
         </div>
-        <Bio className="bio" content={this.props.content} />
+        <Bio className="bio" bio={this.props.bio} />
       </div>
     );
   }

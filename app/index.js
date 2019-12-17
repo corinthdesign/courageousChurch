@@ -1,9 +1,9 @@
-import App from './components/App.js';
+import SimpleApp from './components/SimpleApp.js';
 
 var React = require('react');
 var ReactDOM = require('react-dom');
 
 ReactDOM.render(
-   <App name="Tim"/>,
+   <SimpleApp name="Tim"/>,
    document.getElementById('app')
 );
