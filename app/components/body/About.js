@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import Content from './Content.js';
 import Profile from './Profile.js';
-import { image, profiles } from './../library.js';
+import { image, tim, hannah, careP, worshipP, pastorRes, makeProfile, about } from './../library.js';
 
 class About extends React.Component {
   render() {
-    let Names = () => {
-      Object.values(profiles);
-      console.log(this);
-    };
-
     return (
-      <div className="about" id="about">
-        <Content heading="Here's Who We Are" subheading=""
-        content="Courageous Church is a new church plant forming in Seattle, WA."/>
+    <div className="about" id="about">
+        <Content className="story" heading="Here's Who We Are" subheading=""
+        content={about}/>
         <div className="staff">
           <h2>Our Team</h2>
-          <Names />
+          <div>
+          {makeProfile(hannah)}
+          {makeProfile(tim)}
+          {makeProfile(careP)}
+          {makeProfile(worshipP)}
+          {makeProfile(pastorRes)}
+          </div>
         </div>
       </div>
     )

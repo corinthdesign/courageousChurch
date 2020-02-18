@@ -38,6 +38,7 @@ html, body {
   padding: 0;
 }
 
+/*-------DESKTOP FORMATTING---------*/
 /*---------------NAVIGATION---------------*/
 
 .nav {
@@ -53,8 +54,8 @@ html, body {
 
 .nav img {
   height: auto;
-  width: 20vw;
-  min-width: 300px;
+  width: 15vw;
+  min-width: 250px;
   margin: 2vh ;
 }
 
@@ -64,7 +65,7 @@ html, body {
   position: relative;
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: 1.5em;
-  top: -7vh;
+  top: -5vh;
   color: rgba(31, 113, 151, 1);
   transition: all 0.3s ease;
 }
@@ -82,7 +83,7 @@ html, body {
 
 .heroImage {
   display: block;
-  background: url('../../../images/eveningSkyline.jpg'), rgba(31, 113, 151, 0.8);
+  background: url('../../../images/SeattleMirror.png'), rgba(31, 113, 151, 0.8);
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -107,8 +108,7 @@ html, body {
 }
 
 .heroGive {
-  background: linear-gradient(45deg, rgba(31, 113, 151, 1), rgb(103, 200, 178));
-  position: relative;
+  background: linear-gradient(45deg, #fff, #FFF);  position: relative;
   color: #fff;
   font-family: "Montserrat";
   font-weight: bold;
@@ -119,6 +119,7 @@ html, body {
   padding: 1em;
   border: 3px solid #fff;
   mix-blend-mode: screen;
+  transform: translate
   z-index: 10;
   transition: all 0.2s ease;
 }
@@ -132,12 +133,12 @@ html, body {
 .sectionTop {
   width: 100vw;
   height: 10vh;
-/*  background-image: url('../../../images/sectionTop.png');*/
-  background-size: 55%;
+  background-image: url('../../../images/sectionTop.png');
+  background-size: 80%;
   background-repeat: repeat-x;
   background-position: center;
   position: absolute;
-  top: 85vh;
+  top: 92.5vh;
 }
 
 /*---------------ABOUT SECTION---------------*/
@@ -145,6 +146,14 @@ html, body {
 .about {
   padding: 3em 0;
   background-color: #fff;
+}
+
+.about h1, .about h2, .about h3, .about p {
+  color: rgba(31, 113, 151, 1);
+}
+
+.story p {
+  padding: 0 10vw;
 }
 
 .staff {
@@ -188,7 +197,7 @@ html, body {
   display: inline-block;
   float: right;
   width: 60%;
-  padding-top: 8%;
+  padding-top: 10%;
   position: relative;
 }
 
@@ -215,6 +224,7 @@ html, body {
 
 .engage {
   min-height: 80vh;
+  height: auto;
   background: url("../../../images/sunriseSeattle.jpg"), rgba(31, 113, 151, 0.8) ;
   background-size: cover;
   background-position: center;
@@ -256,6 +266,889 @@ html, body {
   background-color: #4f4f4f;
   color: #fff;
   z-index: 100;
-  padding: 2em;
+  height: auto;
   margin: 0 auto;
+  padding: 0em;
+}
+
+.footer img {
+  min-width: 150px;
+}
+
+.social {
+  display: none;
+  background-color: rgba(31, 113, 151, 0.8);
+  width: auto;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.social img{
+  height: 2.5%;
+  width: 2.5%;
+  min-width: 40px;
+  padding: 0 .75em;
+}
+
+.info {
+  display: block;
+  position: relative;
+  background-color: #4f4f4f;
+  color: #fff;
+  z-index: 100;
+  height: auto;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/*-----------__END DESKTOP FORMATTING_-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------TABLET FORMATTING-----------*/
+@media only screen and (max-width: 800px) {
+
+  h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /*---------------NAVIGATION---------------*/
+
+  .nav {
+    display: block;
+    position: fixed;
+    height: 10vh;
+    margin: 0 auto;
+    background-color: #FFF;
+    width: 100vw;
+    color: #fff;
+    z-index: 1000;
+  }
+
+  .nav img {
+    height: auto;
+    width: 15vw;
+    min-width: 200px;
+    margin: 2vh ;
+  }
+
+  .nav p {
+    display: inline-block;
+    padding: 0 .75em;
+    position: relative;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 1.25em;
+    top: -4vh;
+    color: rgba(31, 113, 151, 1);
+    transition: all 0.3s ease;
+  }
+
+  .nav p:hover {
+    color: rgb(103, 200, 178);
+  }
+
+  /*----------------------BODY------------------------*/
+
+  /*-------HERO IMAGE SECTION---------------*/
+  .body {
+    z-index: 0;
+  }
+
+  .heroImage {
+    display: block;
+    background: url('../../../images/SeattleMirror.png'), rgba(31, 113, 151, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 20vh 0 0 0;
+  }
+
+  .heroLogo {
+    width: 40vw;
+    min-width: 500px;
+    height: auto;
+  }
+
+  .heroText {
+    display: block;
+    position: relative;
+    margin: 3em auto;
+    padding: 1em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .heroGive {
+    background: linear-gradient(45deg, #fff, #FFF);
+    position: relative;
+    color: #1F7197;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 3px solid #fff;
+    box-shadow: 2px 5px 0px #1F7197;
+    mix-blend-mode: screen;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .heroGive:hover {
+    background: linear-gradient(45deg, #fff, #FFF);
+    box-shadow: 2px 5px 0px #1F7197;
+    color: #1F7197;
+  }
+
+  .sectionTop {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../../images/sectionTop.png');
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-position: center;
+    position: absolute;
+    top: 92.5vh;
+  }
+
+  /*---------------ABOUT SECTION---------------*/
+
+  .about {
+    padding: 3em 0;
+    background-color: #fff;
+  }
+
+  .staff {
+    padding: 2em;
+  }
+
+  .card {
+      display: inline-block;
+      margin: 0 2.5em;
+      padding: 1em;
+      width: 40%;
+      min-width: 400px;
+  }
+  .profile {
+    display: inline-block;
+    position: relative;
+    padding: 1em;
+    height: 30%;
+  }
+
+  .profile h3 {
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    display: block;
+    width: 35%;
+    float: left;
+    border-radius: 10000px;
+    height: auto;
+  }
+
+  .nameImage {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+
+  .title {
+    display: inline-block;
+    float: right;
+    width: 60%;
+    padding-top: 10%;
+    position: relative;
+  }
+
+  .bio p {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100px;
+  }
+  /*---------------ENGAGE SECTION---------------*/
+
+  .sectionBottom {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../../images/sectionBottom.png');
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-position: center;
+    position: relative;
+    top: -2.8vh;
+  }
+
+  .engage {
+    min-height: 80vh;
+    height: auto;
+    background: url("../../../images/sunriseSeattle.jpg"), rgba(31, 113, 151, 0.8) ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+  }
+
+  .engageButton {
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    color: #1F7197;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: .5em 1em;
+    padding: 1em 5vw;
+    top: 2em;
+    border: 3px solid #fff;
+    box-shadow: 2px 5px 0px rgba(31, 113, 151, 1);
+    mix-blend-mode: screen;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .engageButton:hover {
+    background: #fff;
+    box-shadow: 2px 5px 0px rgb(103, 200, 178);
+    color: #000;
+  }
+
+  /*---------------------------FOOTER-------------------------*/
+  .footer {
+    display: block;
+    position: relative;
+    background-color: #4f4f4f;
+    color: #fff;
+    z-index: 100;
+    height: 20vh;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+
+  .footer img {
+    min-width: 150px;
+  }
+
+  .social {
+    background-color: rgba(31, 113, 151, 0.8);
+    width: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .social img{
+    height: 2.5%;
+    width: 2.5%;
+    min-width: 40px;
+    padding: 0 .75em;
+  }
+}
+
+
+/*-----------__END TABLET FORMATTING_-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------LARGE MOBILE FORMATTING-----------*/
+@media only screen and (max-width: 450px) {
+
+  h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+  }
+
+  /*---------------NAVIGATION---------------*/
+
+  .nav {
+    display: block;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    background-color: #FFF;
+    width: 100vw;
+    color: #fff;
+    z-index: 1000;
+  }
+
+  .nav img {
+    height: auto;
+    width: 20vw;
+    min-width: 250px;
+    margin: 2vh ;
+  }
+
+  .nav p {
+    display: none;
+    padding: 0 2em;
+    position: relative;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 1.5em;
+    top: -7vh;
+    color: rgba(31, 113, 151, 1);
+    transition: all 0.3s ease;
+  }
+
+  .nav p:hover {
+    color: rgb(103, 200, 178);
+  }
+
+  /*----------------------BODY------------------------*/
+
+  /*-------HERO IMAGE SECTION---------------*/
+  .body {
+    z-index: 0;
+  }
+
+  .heroImage {
+    display: block;
+    background: url('../../../images/SeattleMirror.png'), rgba(31, 113, 151, 0.8);
+    background-size: cover;
+    background-position: left;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    height: 75vh;
+    padding: 10vh 0 0 0;
+  }
+
+  .heroLogo {
+    width: 40vw;
+    min-width: 300px;
+    height: auto;
+  }
+
+  .heroText {
+    display: block;
+    position: relative;
+    margin: 3em auto;
+    padding: 1em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .heroGive {
+    background: linear-gradient(45deg, #fff, #FFF);
+    position: relative;
+    color: #1F7197;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 3px solid #fff;
+    box-shadow: 2px 5px 0px #1F7197;
+    mix-blend-mode: screen;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .heroGive:hover {
+    background: linear-gradient(45deg, #fff, #FFF);
+    box-shadow: 2px 5px 0px #1F7197;
+    color: #1F7197;
+  }
+
+  .sectionTop {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../../images/sectionTop.png');
+    background-size: 250%;
+    background-repeat: repeat-x;
+    background-position: center;
+    position: absolute;
+    top: 90vh;
+  }
+
+  /*---------------ABOUT SECTION---------------*/
+
+  .about {
+    padding: .5em .25em;
+    background-color: #fff;
+  }
+
+  .staff {
+    padding: 1em;
+  }
+
+  .card {
+      display: inline-block;
+      margin: 0;
+      padding: 1em;
+      width: 80%;
+      min-width: 200px;
+  }
+  .profile {
+    display: block;
+    position: relative;
+    padding: 1em;
+    height: 30%;
+  }
+
+  .profile h3 {
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    display: block;
+    width: 35%;
+    float: left;
+    border-radius: 10000px;
+    height: auto;
+  }
+
+  .nameImage {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+
+  .title {
+    display: block;
+    float: right;
+    width: 60%;
+    padding-top: 10%;
+    position: relative;
+  }
+
+  .bio p {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 0px;
+  }
+  /*---------------ENGAGE SECTION---------------*/
+
+  .sectionBottom {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../../images/sectionBottom.png');
+    background-size: 250%;
+    background-repeat: repeat-x;
+    background-position: center;
+    position: relative;
+    top: -2.8vh;
+  }
+
+  .engage {
+    min-height: 80vh;
+    height: auto;
+    background: url("../../../images/sunriseSeattle.jpg"), rgba(31, 113, 151, 0.8) ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+  }
+
+  .engageButton {
+    background: #fff;
+    position: relative;
+    display: block;
+    color: #1F7197;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: 1.25em 1em;
+    padding: .5em 5vw;
+    top: 1em;
+    border: 3px solid #fff;
+    box-shadow: 2px 5px 0px rgba(31, 113, 151, 1);
+    mix-blend-mode: screen;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .engageButton:hover {
+    background: #fff;
+    box-shadow: 2px 5px 0px rgb(103, 200, 178);
+    color: #000;
+  }
+
+  /*---------------------------FOOTER-------------------------*/
+  .footer {
+    display: block;
+    position: relative;
+    background-color: #4f4f4f;
+    color: #fff;
+    z-index: 100;
+    height: 20vh;
+    margin: 0 auto;
+    padding-bottom: 3em;
+  }
+
+  .footer img {
+    min-width: 150px;
+  }
+
+  .social {
+    background-color: rgba(31, 113, 151, 0.8);
+    width: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .social img{
+    height: 2.5%;
+    width: 2.5%;
+    min-width: 40px;
+    padding: 0 .75em;
+  }
+}
+/*-----------__END LARGE MOBILE FORMATTING_-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------SMALL MOBILE FORMATTING-----------*/
+@media only screen and (max-width: 330px) {
+
+  h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2.75em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+  }
+
+  /*---------------NAVIGATION---------------*/
+
+  .nav {
+    display: block;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    background-color: #FFF;
+    width: 100vw;
+    color: #fff;
+    z-index: 1000;
+  }
+
+  .nav img {
+    height: auto;
+    width: 20vw;
+    min-width: 100px;
+    margin: 2vh ;
+  }
+
+  .nav p {
+    display: none;
+    padding: 0 2em;
+    position: relative;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 1.5em;
+    top: -7vh;
+    color: rgba(31, 113, 151, 1);
+    transition: all 0.3s ease;
+  }
+
+  .nav p:hover {
+    color: rgb(103, 200, 178);
+  }
+
+  /*----------------------BODY------------------------*/
+
+  /*-------HERO IMAGE SECTION---------------*/
+  .body {
+    z-index: 0;
+  }
+
+  .heroImage {
+    display: block;
+    background: url('../../../images/SeattleMirror.png'), rgba(31, 113, 151, 0.8);
+    background-size: cover;
+    background-position: left;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    height: 75vh;
+    padding: 10vh 0 0 0;
+  }
+
+  .heroLogo {
+    width: 40vw;
+    min-width: 200px;
+    height: auto;
+  }
+
+  .heroText {
+    display: block;
+    position: relative;
+    margin: 3em auto;
+    padding: 1em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .heroGive {
+    background: linear-gradient(45deg, #fff, #FFF);
+    position: relative;
+    color: #1F7197;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: 0 auto;
+    padding: .5em;
+    border: 3px solid #fff;
+    box-shadow: 2px 5px 0px #1F7197;
+    mix-blend-mode: screen;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .heroGive:hover {
+    background: linear-gradient(45deg, #fff, #FFF);
+    box-shadow: 2px 5px 0px #1F7197;
+    color: #1F7197;
+  }
+
+  .sectionTop {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../../images/sectionTop.png');
+    background-size: 250%;
+    background-repeat: repeat-x;
+    background-position: center;
+    position: absolute;
+    top: 90vh;
+  }
+
+  /*---------------ABOUT SECTION---------------*/
+
+  .about {
+    padding: .5em .25em;
+    background-color: #fff;
+  }
+
+  .staff {
+    padding: 1em 0.15em;
+  }
+
+  .card {
+      display: inline-block;
+      margin: 0;
+      padding: 1em 0;
+      width: 80%;
+      min-width: 200px;
+  }
+  .profile {
+    display: block;
+    position: relative;
+    padding: 1em;
+    height: 30%;
+  }
+
+  .profile h3 {
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    display: block;
+    width: 35%;
+    float: left;
+    border-radius: 10000px;
+    height: auto;
+  }
+
+  .nameImage {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+
+  .title {
+    display: block;
+    float: right;
+    width: 60%;
+    padding-top: 10%;
+    position: relative;
+  }
+
+  .bio p {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 0px;
+  }
+  /*---------------ENGAGE SECTION---------------*/
+
+  .sectionBottom {
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../../images/sectionBottom.png');
+    background-size: 250%;
+    background-repeat: repeat-x;
+    background-position: center;
+    position: relative;
+    top: -2.8vh;
+  }
+
+  .engage {
+    height: 100vh;
+    background: url("../../../images/sunriseSeattle.jpg"), rgba(31, 113, 151, 0.8) ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+  }
+
+  .engageButton {
+    background: #fff;
+    position: relative;
+    display: block;
+    color: #1F7197;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: 1.25em 1em;
+    padding: .5em 5vw;
+    top: 1em;
+    border: 3px solid #fff;
+    box-shadow: 2px 5px 0px rgba(31, 113, 151, 1);
+    mix-blend-mode: screen;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+
+  .engageButton:hover {
+    background: #fff;
+    box-shadow: 2px 5px 0px rgb(103, 200, 178);
+    color: #000;
+  }
+
+  /*---------------------------FOOTER-------------------------*/
+  .footer {
+    display: block;
+    position: relative;
+    background-color: #4f4f4f;
+    color: #fff;
+    z-index: 100;
+    margin: 0 auto;
+  }
+
+  .footer img {
+    min-width: 100px;
+  }
+
+  .footer p {
+    padding-bottom: 2vh;
+  }
+
+  .social {
+    background-color: rgba(31, 113, 151, 0.8);
+    width: auto;
+    padding: 1em;
+  }
+
+  .social img{
+    height: 2.5%;
+    width: 2.5%;
+    min-width: 40px;
+    padding: 0 .75em;
+  }
 }

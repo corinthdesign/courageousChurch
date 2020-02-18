@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 class Bio extends React.Component {
   render() {
     return (
-      <div>
-        <p>{this.props.bio}</p>
-      </div>
+        <p className="bio">{this.props.bio}</p>
     );
   };
 

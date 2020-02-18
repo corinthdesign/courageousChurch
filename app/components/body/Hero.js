@@ -11,7 +11,7 @@ class Hero extends React.Component {
               <img className="heroLogo" src={image('logoWhite.png')} title="Courageous Church Logo" />
               <h3>Bold Love - Bold Truth - Bold Love</h3>
             </div>
-            <Button link="https://tithe.ly/give?c=1086101" title="Support Courageous Church" className="heroGive" submit="- Support Courageous Church -"/>
+            <Button link="https://tithe.ly/give?c=1086101" title="Support Courageous Church" className="heroGive" submit="Support"/>
             <div className="sectionTop"></div>
         </div>
       </div>
